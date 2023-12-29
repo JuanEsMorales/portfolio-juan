@@ -1,0 +1,28 @@
+---
+import ExperienceItem from "./ExperienceItem.astro";
+const EXPERIENCE = [
+  {
+    date: "Actualmente...",
+    title: "Desarrollador de la APP Web DEC - Coltrack SAS",
+    description: "Responsable de la APP Web DEC, encargado del desarrollo tanto front-end como back-end. Integrando bases de datos",
+    link: "https://github.com/JuanEsMorales/DEC_PROJECT"
+  },
+  {
+    date: "Junio de 2021",
+    title: "Técnico en Programación de Software - SENA",
+    description: "Estudié el Técnico De Programación de Software en el SENA donde aprendí las bases para el desarrollo de software."
+  }
+  ]
+---
+
+<ol class="relative border-s border-gray-200 dark:border-gray-700 ml-2">      
+  {
+    EXPERIENCE.map((experience) => (
+      <li class="mb-10 ms-4 w-full">
+        <ExperienceItem  {...experience} />  
+      </li>
+    ))
+  }
+  
+</ol>
+
